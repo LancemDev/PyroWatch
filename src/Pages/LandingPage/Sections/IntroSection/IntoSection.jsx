@@ -2,11 +2,14 @@ import React from "react";
 import css from "./IntroSection.module.css";
 import BlackButton from "../../../../Components/BlackButton/BlackButton"
 import OutlinedBtn from "../../../../Components/OutlinedButton/OutlinedBtn"
+import background from "../../../../Assets/background.jpg"
 
 const IntoSection = () => {
   return (
     <div className={css.container}>
-      <div className={css.ImageSection}></div>
+      <div className={css.ImageSection}>
+      <img src={background} alt="back"/>
+      </div>
       <div className={css.IntroStatement}>
         <div className={css.openingStatement}>
           <h1>

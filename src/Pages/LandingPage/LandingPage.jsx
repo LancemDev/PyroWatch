@@ -13,9 +13,9 @@ const LandingPage = () => {
       <IntroSection />
       <SecondSection />
       <ThirdSection />
-      <FourthSection/>
-      <FifthSection/>
-      <Footer/>
+      <FourthSection />
+      <FifthSection />
+      <Footer />
     </div>
   );
 };

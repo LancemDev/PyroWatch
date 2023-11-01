@@ -8,6 +8,14 @@ const Navbar = () => {
   return (
     <div className={css.container}>
       <div className={css.sections}>
+        <div
+          className={css.logoSection}
+          onClick={() => {
+            navigate("home");
+          }}
+        >
+          <h1>Pyrowatch</h1>
+        </div>
         <div className={css.linksSections}>
           <h4
             onClick={() => {
@@ -33,14 +41,6 @@ const Navbar = () => {
             </h4>
             *
           </div>
-        </div>
-        <div
-          className={css.logoSection}
-          onClick={() => {
-            navigate("home");
-          }}
-        >
-          <h1>Logo</h1>
         </div>
         <div className={css.signUpSection}>
           <BlackButton title={"Sign Up"} />
