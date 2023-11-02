@@ -2,13 +2,22 @@ import React from "react";
 import css from "./IntroSection.module.css";
 import BlackButton from "../../../../Components/BlackButton/BlackButton"
 import OutlinedBtn from "../../../../Components/OutlinedButton/OutlinedBtn"
-import background from "../../../../Assets/background.jpg"
+import background from "../../../../Assets/firefighter_1.jpg"
+import { Parallax } from "react-parallax";
+
 
 const IntoSection = () => {
   return (
     <div className={css.container}>
       <div className={css.ImageSection}>
-      <img src={background} alt="back"/>
+      {/* <img src={background} alt="back"/> */}
+      <Parallax
+        bgImage={background}
+        className="w-full h-full"
+      >
+
+      </Parallax>
+
       </div>
       <div className={css.IntroStatement}>
         <div className={css.openingStatement}>

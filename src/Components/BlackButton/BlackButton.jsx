@@ -1,8 +1,10 @@
 import React from 'react'
 import css from "./BlackButton.module.css"
-const BlackButton = ({title}) => {
+const BlackButton = ({title, onClickMethod}) => {
   return (
-    <div className={css.container}>
+    <div
+    onClick={onClickMethod}
+    className={css.container}>
         <h3>{title}</h3>
     </div>
   )

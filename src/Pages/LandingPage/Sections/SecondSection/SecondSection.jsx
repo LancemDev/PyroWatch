@@ -1,5 +1,6 @@
 import React from "react";
 import css from "./SecondSection.module.css";
+import banner_img from './../../../../Assets/fighter.jpg'
 
 const SecondSection = () => {
   return (
@@ -35,7 +36,7 @@ const SecondSection = () => {
           </div>
         </div>
         <div className={css.ImageSecion}>
-            <div className={css.image}></div>
+            <img src={banner_img} className="w-10/12 h-75vh object-cover" alt="" />
         </div>
       </div>
     </div>

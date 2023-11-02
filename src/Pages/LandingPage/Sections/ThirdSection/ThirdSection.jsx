@@ -1,5 +1,7 @@
 import React from "react";
 import css from "./ThirdSection.module.css";
+import banner_img from './../../../../Assets/banner_2.jpeg'
+
 
 const ThirdSection = () => {
   const PointWidget = ({ header, description }) => {
@@ -13,9 +15,14 @@ const ThirdSection = () => {
   return (
     <div className={css.container}>
       <div className={css.sections}>
-        <div className={css.ImageSection}></div>
+        <div className={css.ImageSection} style={{backgroundColor:'transparent'}}>
+        <img src={banner_img} className="w-full h-75vh object-cover" alt="" />
+
+        </div>
         <div className={css.statementsection}>
-          <div className={css.styledContainer}></div>
+          <div className={css.styledContainer}>
+            
+          </div>
           <div className={css.statements}>
             <PointWidget
               header={"Exceptional Detection Technology"}

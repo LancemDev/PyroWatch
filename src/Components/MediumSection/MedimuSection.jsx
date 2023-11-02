@@ -8,10 +8,11 @@ const MedimuSection = ({
   description,
   outlinedBtn,
   navBtn,
+  flex_direction
 }) => {
   return (
     <div className={css.container}>
-      <div className={css.sections}>
+      <div className={css.sections} style={flex_direction && { flexDirection: `${flex_direction} !important` }}>
         <div className={css.statementSections}>
           <span>{tagline}</span>
           <h1>{heading}</h1>
